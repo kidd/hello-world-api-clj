@@ -21,4 +21,4 @@
 
 ;; For interactive development:
 ;; (.stop server)
-;; (def server (-main))
+(def server (-main))

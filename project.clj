@@ -8,7 +8,9 @@
                  [ring/ring-jetty-adapter "1.2.2"]
                  [environ "0.5.0"]]
   :min-lein-version "2.0.0"
-  :plugins [[environ/environ.lein "0.2.1"]]
+  :plugins [[environ/environ.lein "0.2.1"]
+            [lein-ring "0.8.13"]]
   :hooks [environ.leiningen.hooks]
   :uberjar-name "clojure-getting-started-standalone.jar"
+  :ring {:handler clojure-getting-started.web/app}
   :profiles {:production {:env {:production true}}})
